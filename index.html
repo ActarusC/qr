@@ -44,9 +44,6 @@
                 if (code && code.data) {
                     // Vérifier si c'est un URL
                     let url = code.data;
-                    if (!url.startsWith('http')) {
-                        url = 'http://' + url;
-                    }
                     resultDiv.innerHTML = `<a href="${url}" target="_blank">Cliquez ici pour activer</a>`;
                 } else {
                     resultDiv.textContent = 'Aucun QR code détecté.';
